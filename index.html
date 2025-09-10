@@ -8,26 +8,38 @@
     <script>
         new vUnit({
             CSSMap: {
-                '.vh': {
-                    property: 'max-height',
-                    reference: 'vh'
-                },
-                '.vw': {
-                    property: 'max-width',
-                    reference: 'vw'
-                }
+                '.vh': { property: 'max-height', reference: 'vh' },
+                '.vw': { property: 'max-width', reference: 'vw' }
             }
         }).init();
     </script>
-    <!-- Disable css cache -->
+    <!-- Disable CSS cache -->
     <script type="text/javascript">
         document.write('<link rel="stylesheet" href="css/sleek.css?'+Math.random()+'">');
     </script>
+    <style>
+        /* Vidéo en background plein écran */
+        #background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        /* Fallback si la vidéo ne charge pas */
+        body {
+            background: black;
+        }
+    </style>
 </head>
 <body>
-    <!-- Video background -->
-    <video autoplay loop muted playsinline id="background-video" style="position:fixed;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:-1;">
+    <!-- Vidéo background -->
+    <video autoplay loop muted playsinline id="background-video">
         <source src="backgrounds/videos/12.webm" type="video/webm">
+        <!-- Message fallback -->
+        Votre navigateur ne supporte pas la vidéo HTML5.
     </video>
 
     <div id="player"></div>
@@ -57,9 +69,9 @@
         <p>Check the browser console for further details.</p>
     </div>
 
+    <!-- Scripts JS -->
     <script src="js/lib/jquery-2.1.1.min.js"></script>
     <script src="js/lib/jquery.backstretch.min.js"></script>
-    <!-- Disable javascript cache -->
     <script type="text/javascript">
         document.write('<script src="js/config.js?'+Math.random()+'"><\/script>');
         document.write('<script src="js/check.js?'+Math.random()+'"><\/script>');

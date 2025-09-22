@@ -10,7 +10,7 @@
 // Leave it blank to use text instead
 // (Put the files in the images folder)
 // (You can also use external URL)
-var l_serverImage = "12.png";
+var l_serverImage = "1.png";
 
 // Center logo?
 // 'true' or 'false'
@@ -27,7 +27,7 @@ var l_serverName = "Nyxeria ~ SCP Roleplay";
 // Use a video for the background?
 // Otherwise it will use images
 // 'true' or 'false'
-var l_bgVideo = true;
+var l_bgVideo = false;
 
 // Default available videos:
 // "aurora.webm"
@@ -72,15 +72,18 @@ var l_bgImageMapBased = false;
 // (Place the files in the backgrounds/images folder)
 // (You can also use external URL)
 var l_bgImages = [
-	"touhou01.jpg",
-	"touhou02.jpg",
-	"touhou03.jpg"
+	"1.png",
+	"2.png",
+	"3.png",
+	"4.png",
+	"5.png",
+	"12.png",
 ];
 
 // (Image-background only)
 // Random background images order?
 // 'true' or 'false'
-var l_bgImagesRandom = false;
+var l_bgImagesRandom = true;
 
 // (Image-background only)
 // Delay between background images changes
@@ -113,7 +116,7 @@ var l_musicDisplay = true;
 // (Place the ogg files in the music folder)
 // (You can also use external URL for the ogg files)
 var l_musicPlaylist = [
-	{ogg: "12.ogg", name: "SCP Cinematic Universe Intro - ananomalouswriter YTB"},
+	{ogg: "Military.ogg", name: "Military Motivation - Devil At My Door (2020)"},
 ];
 
 // Random music order?

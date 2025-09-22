@@ -10,7 +10,7 @@
 // Leave it blank to use text instead
 // (Put the files in the images folder)
 // (You can also use external URL)
-var l_serverImage = "12.png";
+var l_serverImage = "";
 
 // Center logo?
 // 'true' or 'false'
@@ -76,7 +76,7 @@ var l_bgImages = [
 	"3.png",
 	"4.png",
 	"5.png",
-	"12.png",
+	"12.png"
 ];
 
 // (Image-background only)

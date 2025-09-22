@@ -10,7 +10,7 @@
 // Leave it blank to use text instead
 // (Put the files in the images folder)
 // (You can also use external URL)
-var l_serverImage = "1.png";
+var l_serverImage = "12.png";
 
 // Center logo?
 // 'true' or 'false'
@@ -64,7 +64,7 @@ var l_background = "12.webm";
 // Also, the image needs to be in .jpg format
 // E.g: gm_flatgrass.jpg, gm_construct.jpg, rp_downtown_v4c_v2.jpg
 // 'true' or 'false'
-var l_bgImageMapBased = false;
+var l_bgImageMapBased = true;
 
 // (Image-background only)
 // Place one or more images
@@ -72,7 +72,6 @@ var l_bgImageMapBased = false;
 // (Place the files in the backgrounds/images folder)
 // (You can also use external URL)
 var l_bgImages = [
-	"1.png",
 	"2.png",
 	"3.png",
 	"4.png",
